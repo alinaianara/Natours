@@ -1,6 +1,6 @@
 .popup{
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     top: 0;
     left: 0;
@@ -13,36 +13,36 @@
     &__content{
         @include centerelement;
 
-        width: 75%;
+        width: 75vw;
         background-color: $color-white;
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
         border-radius: 3px;
-        display: table;
-        overflow: hidden;
-        opacity: 0;
-        transform: translate(-50%, -50%) scale(.2);
-        transition: all .5s .2s; //dalay 2seconds
+        //display: table;
+        //overflow: hidden;
+        //opacity: 0;
+        //transform: translate(-50%, -50%) scale(.2);
+        //transition: all .5s .2s; //dalay 2seconds
 
         &__left{
             width: 33.3333%;
-            display: table-cell;
+            //display: table-cell;
         }
 
         &__right{
-            width: 66.6666%;
-            display: table-cell;
-            vertical-align: middle;
-            padding: 3rem 5rem;
+            width: 66.6667%;
+            //display: table-cell;
+            //vertical-align: middle;
+            //padding: 3rem 5rem;
         }
 
         &__img{
-            display: block;
             width: 100%;
+            display: block;
         }
 
         &__text{
             font-size: 1.4rem;
-            margin-bottom: 4rem;
+            //margin-bottom: 4rem;
 
             -moz-column-count: 2; // number of columns
             -moz-column-gap: 4rem; //separation between columns
